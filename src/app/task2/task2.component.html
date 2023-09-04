@@ -1,0 +1,23 @@
+<h1>Live filling form</h1>
+
+<input type="text" [(ngModel)]="username" placeholder="Enter name" />
+<br />
+<input type="text" [(ngModel)]="email" placeholder="Enter email" />
+<button (click)="addData()">Save</button>
+<br />
+
+<table *ngIf="userData.length > 0; else noData">
+  <tr>
+    <th>No</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let data of userData; let i = index" class="tableData">
+    <td>{{ i + 1 }}</td>
+    <td>{{ data.username }}</td>
+    <td>{{ data.email }}</td>
+    <td><button (click)="deleteData(i)">Delete</button></td>
+  </tr>
+</table>
+<ng-template #noData> There is no data in form. </ng-template>

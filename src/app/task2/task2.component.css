@@ -1,0 +1,16 @@
+input {
+  outline: none;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+button {
+  padding: 5px 15px;
+  outline: none;
+  display: block;
+}
+th,
+td {
+  padding: 8px;
+}

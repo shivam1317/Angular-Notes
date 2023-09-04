@@ -1,0 +1,18 @@
+<p>postlist works!</p>
+<p>{{ fromPostParent }}</p>
+
+<ul>
+  <li *ngFor="let list of postlist">
+    {{ list.data }}
+  </li>
+</ul>
+<button (click)="addPost()">Add new post</button>
+
+<h2>Post titles</h2>
+<ul>
+  <li *ngFor="let post of posts; let i = index">
+    {{ post.title }}
+    <!-- To use variables inside your string you have to do it like this -->
+    <button [routerLink]="['/post', i]">View more</button>
+  </li>
+</ul>

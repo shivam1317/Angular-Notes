@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+}
+.text-red {
+  color: red;
+}
+input {
+  outline: none;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.bg-blue {
+  background-color: skyblue;
+  padding: 5px;
+  width: fit-content;
+}
+.blue-border {
+  border: 2px solid rgb(35, 35, 169);
+  border-radius: 8px;
+}
+
+.form-container {
+  padding: 5px;
+  margin: 10px 5px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.form-group input,
+textarea {
+  outline: none;
+  padding: 10px;
+  width: 50%;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  margin: 10px 0px;
+}
+
+.form-container button {
+  outline: none;
+  background-color: #0fa3b1;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form-container button:disabled {
+  outline: none;
+  background-color: #8de2ea;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.alert {
+  color: red;
+}
+.is-invalid {
+  border: 1px solid red;
+}
+
+.active {
+  color: red;
+}

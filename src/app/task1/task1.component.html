@@ -1,0 +1,20 @@
+<h1>Live Form</h1>
+<input type="text" placeholder="Enter title here" [(ngModel)]="title" />
+<br />
+<input
+  type="text"
+  placeholder="Enter description here"
+  [(ngModel)]="description"
+/>
+<br />
+<input type="text" placeholder="Enter image Url here" [(ngModel)]="imgUrl" />
+<br />
+<input type="checkbox" [(ngModel)]="isBackground" id="Check1" />
+<label for="Check1"> Need Background </label>
+
+<h1>Your Details</h1>
+<div [class.frame]="isBackground">
+  <img [src]="imgUrl" />
+  <h2>{{ title }}</h2>
+  <p>{{ description }}</p>
+</div>
